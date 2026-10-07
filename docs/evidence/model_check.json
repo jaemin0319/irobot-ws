@@ -1,0 +1,143 @@
+{
+  "all_ok": true,
+  "checks": {
+    "structure": {
+      "ok": true,
+      "nq": 7,
+      "nv": 7,
+      "nu": 7,
+      "nmesh": 46,
+      "ngeom": 57
+    },
+    "visual_geoms_no_collision": {
+      "ok": true,
+      "n": 37
+    },
+    "collision_geoms_active": {
+      "ok": true,
+      "n": 17
+    },
+    "joint_limits": {
+      "ok": true,
+      "max_diff": 0.0
+    },
+    "actuators": {
+      "ok": true,
+      "map": [
+        "fr3_joint1",
+        "fr3_joint2",
+        "fr3_joint3",
+        "fr3_joint4",
+        "fr3_joint5",
+        "fr3_joint6",
+        "fr3_joint7"
+      ],
+      "ctrlrange": [
+        87.0,
+        87.0,
+        87.0,
+        87.0,
+        12.0,
+        12.0,
+        12.0
+      ]
+    },
+    "armature_derived": {
+      "ok": true,
+      "armature": [
+        0.6057,
+        0.6057,
+        0.4625,
+        0.4625,
+        0.2055,
+        0.2055,
+        0.2055
+      ],
+      "note": "motor_inertia[kg m^2, motor side] * gear_ratio^2 from dynamics.yaml (derived, not an official joint value)"
+    },
+    "inertials_match_urdf": {
+      "ok": true,
+      "mass": 1.6902077812131314e-06,
+      "com": 4.852556027778816e-08,
+      "inertia": 2.0537480927605804e-06
+    },
+    "finger_fixed_open": {
+      "ok": true,
+      "left": [
+        0.0,
+        0.04,
+        0.0584
+      ],
+      "right": [
+        0.0,
+        -0.04,
+        0.0584
+      ]
+    },
+    "tcp_fk_independent": {
+      "ok": true,
+      "urdf_fk": [
+        0.30689,
+        0.0,
+        0.48688
+      ],
+      "mujoco": [
+        0.30689,
+        0.0,
+        0.48688
+      ],
+      "tool_z": [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    "home_no_contact": {
+      "ok": true,
+      "ncon": 0
+    },
+    "home_clearance": {
+      "ok": true,
+      "contacts": []
+    },
+    "base_on_floor": {
+      "ok": true,
+      "link0_z": 0.0,
+      "floor_z": 0.0,
+      "note": "link0 mesh bottom touches floor plane; world<->fr3_link0 excluded as the mount"
+    },
+    "collision_detection_works": {
+      "ok": true,
+      "floor_pose": [
+        [
+          "world",
+          "fr3_hand",
+          -0.031845914551878685
+        ],
+        [
+          "world",
+          "fr3_hand",
+          -0.031812593356376706
+        ]
+      ],
+      "self_pose": [
+        [
+          "fr3_link1",
+          "fr3_link6",
+          -0.003205330018218447
+        ],
+        [
+          "fr3_link1",
+          "fr3_link7",
+          -0.02404190449164297
+        ]
+      ]
+    },
+    "hold_home_10s": {
+      "ok": true,
+      "max_q_err": 0.0,
+      "max_qd": 0.0,
+      "sat_steps": 0
+    }
+  }
+}

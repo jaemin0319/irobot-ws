@@ -1,0 +1,10 @@
+2026-10-07 15:14:07,991 {"ev": "START", "cycle": 0, "phase": "INIT_LOAD", "sim_t": 0.0, "mode": "fixed", "seed": 3745567575, "mujoco": "3.15.0", "init": "qpos=home,qvel=0 (start pose only)"}
+2026-10-07 15:14:08,895 {"ev": "HOME_CONFIRMED", "cycle": 0, "phase": "HOME_CHECK", "sim_t": 0.502, "max_q_err": 0.0, "max_qd": 0.0}
+2026-10-07 15:14:08,915 {"ev": "TARGET_GENERATED", "cycle": 1, "phase": "GEN_TARGET", "sim_t": 0.502, "target": [0.45, 0.2, 0.35], "q_goal": [0.18834, -0.18782, 0.21828, -2.21753, 0.04521, 2.03363, 0.7854], "ik_pos_err": 0.0006675288772133005, "ik_ori_err_deg": 0.0018641623115152207, "floor_dist": 0.3408604583405712, "n": 60, "vfrac": 0.214, "T": 2.0}
+2026-10-07 15:14:08,921 {"ev": "REACH_TRAJ", "cycle": 1, "phase": "REACH", "sim_t": 0.502, "T": 2.0, "start_qd_max": 0.0, "n": 60, "vfrac": 0.214}
+2026-10-07 15:14:11,222 {"ev": "REACH_CONFIRMED", "cycle": 1, "phase": "REACH_SETTLE", "sim_t": 2.806, "sat_steps": 0, "T": 2.0, "pos_err": 0.0011623664203889341, "ori_err_deg": 0.13559270771583704, "max_qd": 0.0007073011393161942}
+2026-10-07 15:14:11,222 {"ev": "RECOVERY_STARTED", "cycle": 1, "phase": "RECOVER", "sim_t": 2.806, "q": [0.18822, -0.18821, 0.21815, -2.21784, 0.0434, 2.03191, 0.78539], "qd": [0.00016, 0.00013, 0.00021, 0.00022, 0.00071, 0.00071, 0.0]}
+2026-10-07 15:14:11,230 {"ev": "RECOVER_TRAJ", "cycle": 1, "phase": "RECOVER", "sim_t": 2.806, "T": 2.0, "start_qd_max": 0.0007073011393161942, "n": 60, "vfrac": 0.214}
+2026-10-07 15:14:13,523 {"ev": "RECOVERY_CONFIRMED", "cycle": 1, "phase": "RECOVER_SETTLE", "sim_t": 5.11, "sat_steps": 0, "T": 2.0, "max_q_err": 0.0016551120722048118, "max_qd": 0.0007038085666037112}
+2026-10-07 15:14:13,524 {"ev": "SHUTDOWN", "cycle": 1, "phase": "RECOVER_SETTLE", "sim_t": 5.11, "reason": "fixed_mode_done", "exit_code": 0, "cycles": 1, "close_s": 0.0}
+2026-10-07 15:14:13,524 {"ev": "VIEWER_CLOSED", "cycle": 1, "phase": "RECOVER_SETTLE", "sim_t": 5.11, "running": false}

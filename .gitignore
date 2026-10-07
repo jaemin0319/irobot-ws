@@ -1,0 +1,19 @@
+# environment / caches / temp
+.venv/
+.tmp/
+__pycache__/
+*.pyc
+/core
+core.[0-9]*
+*.xwd
+.env
+# official model checkout (fetched by scripts/10_fetch_model.sh) and generated artifacts
+third_party/
+models/meshes/
+models/fr3_hand_scene.xml
+# runtime logs (selected evidence is copied to docs/evidence/)
+logs/
+# unused draft from an interrupted session (kept locally only)
+scripts/30_build_model.py
+models/fr3_hand.xml
+models/scene.xml

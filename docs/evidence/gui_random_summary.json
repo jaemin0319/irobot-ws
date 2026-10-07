@@ -1,0 +1,26 @@
+{
+  "order_ok": true,
+  "problems": [],
+  "seed": 20261007,
+  "completed_cycles": 38,
+  "targets_generated": 39,
+  "failed": false,
+  "reach_pos_err_max_mm": 1.561,
+  "reach_ori_err_max_deg": 0.145,
+  "reach_qd_max": 0.0007541358175227524,
+  "recover_q_err_max_rad": 0.0020481068423068294,
+  "recover_qd_max": 0.0007467308211416944,
+  "torque_sat_steps_total": 0,
+  "candidates_total": 62,
+  "acceptance_rate": 0.629,
+  "reject_reasons": {
+    "ik_not_converged": 23
+  },
+  "gen_wall_max_s": 0.127,
+  "sim_t_end": 178.014,
+  "shutdown": {
+    "reason": "SIGINT",
+    "exit_code": 0,
+    "close_s": 0.0
+  }
+}
