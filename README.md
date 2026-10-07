@@ -28,7 +28,7 @@ ROS는 **필요 없습니다**. xacro 전개 결과(`models/urdf/fr3_hand.{urdf,
 
 ```bash
 # 작업공간이 아직 없을 때만 clone 합니다 (기존 ~/irobot_ws를 덮어쓰지 않음)
-[ -e ~/irobot_ws ] && echo "~/irobot_ws 가 이미 있습니다 — 그 폴더를 사용하세요" || git clone <이 저장소 URL> ~/irobot_ws
+[ -e ~/irobot_ws ] && echo "~/irobot_ws 가 이미 있습니다 — 그 폴더를 사용하세요" || git clone https://github.com/jaemin0319/irobot-ws.git ~/irobot_ws
 cd ~/irobot_ws
 ./setup.sh      # venv 생성·설치 → 공식 모델 확보 → MuJoCo 모델 변환 → 모델 검사(ALL OK)
 ```
